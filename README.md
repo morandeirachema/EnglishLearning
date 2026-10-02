@@ -58,8 +58,8 @@ Legend: 🆓 free · 💶 paid · 🖥️ Mac · 📱 Pixel · 🌐 web
 
 **How to use**
 - ⏱️ **15 minutes every day** on the Pixel (commute, coffee). Never skip reviews: that is where the memory happens.
-- ➕ Add cards from **your own** mistakes and reading, not random lists. Run `/daily-drill` and ask for Anki cards; it writes `log/anki-DATE.csv`.
-- 📥 Import in Anki on the Mac: *File → Import*, choose the CSV, note type **Cloze**, separator **semicolon**. It syncs to the phone.
+- ➕ Add cards from **your own** mistakes and reading, not random lists. Run `/daily-drill` and ask for Anki cards; it writes `log/anki-DATE.txt`.
+- 📥 Import in Anki on the Mac: *File → Import*, pick the file. The file tells Anki the deck, card type and separator, so just press **Import**. Then *Sync*; the cards appear on the Pixel.
 - 💡 Use whole sentences (cloze cards), not single words: you learn collocations at the same time.
 
 ---

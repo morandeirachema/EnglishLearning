@@ -16,8 +16,10 @@ Replace the parts in [brackets]. Turn **off** the "Learning" style for mocks and
 ## T3 – Error log extraction
 > From this conversation or transcript, extract every language error I made. Output CSV with header: date,original,correction,category,l1_interference,explanation. category is one of: grammar, vocabulary, collocation, false-friend, preposition, article, tense, word-order, register, spelling. l1_interference is yes or no. explanation is 15 words or fewer. Then list my top 5 recurring patterns.
 
-## T4 – Anki cards (CSV import)
-> Create [20] Anki cloze cards at CEFR [B2/C1] on [topic] for [exam] writing and speaking. Output only CSV with header Text;Extra;Tags, semicolon-separated, fields in quotes. Text = an English sentence with the target word as {{c1::word}}. Extra = definition, 2 collocations and a Spanish gloss. Flag false friends. Tags = level and topic.
+## T4 – Anki cards (file import)
+> Create [20] Anki cloze cards at CEFR [B2/C1] on [topic] for [exam] writing and speaking. Output a plain-text file that starts with exactly these lines:
+> `#separator:Semicolon` / `#html:true` / `#notetype:Cloze` / `#deck:English::Exam` / `#tags column:3`
+> Then one card per line: Text;Back Extra;Tags. Text = a full English sentence with the target as {{c1::word}}. Back Extra = definition, 2 collocations and a Spanish gloss separated by <br>. Flag false friends. Tags = level and topic, separated by spaces.
 
 ## T5 – Reading comprehension at CEFR level
 > Write an original [C1] text (~[550] words) on [topic] in the style of [Cambridge C1 Reading Part 5 / IELTS Academic passage]. Then write [6] questions in that exact task type. Hide the key until I say "KEY"; the key must quote the line that proves each answer and explain why each distractor is wrong.
