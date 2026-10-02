@@ -166,6 +166,10 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 | Sun | Record 2 min → log errors | Pixel Recorder + `/log-errors` | 15 min |
 | Daily, short | Pronunciation | ELSA | 10 min |
 
+📊 **Track it:** after each session add one line to [`log/study.csv`](log/study.csv) (`2026-10-05,30,input,podcast`). Strands: `input`, `output`, `study`, `fluency`, `exam`.
+
+🔄 **Every Sunday:** run `/weekly-review` in Claude Code. It runs `python3 scripts/stats.py`, shows your hours, strand balance and which error types are going down, then plans next week.
+
 📈 **Every 3 months:** take the free **EF SET** test (efset.org) and note the score in `log/progress.md`.
 
 ---
@@ -187,11 +191,12 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 | [`research/`](research/) | The method, prompt templates, exam comparison |
 | [`apps.md`](apps.md) | Full verified app list with prices |
 | [`log/errors.csv`](log/errors.csv) | Your error log (skills write here) |
-| [`log/progress.md`](log/progress.md) | Level checks over time |
+| [`log/study.csv`](log/study.csv) | Minutes studied per strand |
+| [`log/progress.md`](log/progress.md) | Weekly reviews and level checks |
 | `writing/` · `speaking/` | Your essays and speaking transcripts |
 | `listening/` | Listening scripts and generated audio |
-| `scripts/` | `listening.py` (audio from scripts) |
-| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` · `/listening-practice` |
+| `scripts/` | `listening.py` (audio from scripts) · `stats.py` (progress report) |
+| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` · `/listening-practice` · `/weekly-review` |
 
 <div align="center">
 
