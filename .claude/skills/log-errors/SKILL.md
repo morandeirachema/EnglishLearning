@@ -1,0 +1,10 @@
+---
+name: log-errors
+description: Extract English errors from a pasted text or transcript (e.g. Pixel Recorder or Claude voice transcript) and append them to log/errors.csv. Use when the user pastes something they said or wrote and wants it corrected or logged.
+---
+
+1. Treat the input as the learner's own English. If it is a speech transcript, ignore likely transcription glitches and do not comment on pronunciation.
+2. First list each error and ask the learner to try to self-correct, unless they asked for direct answers.
+3. Append rows to `log/errors.csv`: `date,original,correction,category,l1_interference,explanation,source`. Quote fields containing commas. Explanation is 15 words or fewer.
+4. Merge obvious duplicates by noting the repeat in the explanation rather than adding identical rows.
+5. Finish with the top 3 recurring categories in the whole log.
