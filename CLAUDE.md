@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Purpose
 
-EnglishPath is a personal study hub for an adult Spanish speaker learning English at home to pass an official English certificate. It is docs-first: Markdown research and plans, a CSV error log, and Claude Code skills that act as a tutor. There is no build, test or lint step.
+EnglishLearning is a personal study hub for an adult Spanish speaker learning English at home to pass an official English certificate. It is docs-first: Markdown research and plans, a CSV error log, and Claude Code skills that act as a tutor. There is no build, test or lint step.
 
 ## Learner profile
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🇬🇧 EnglishPath
+# 🇬🇧 EnglishLearning
 
 **Learn English at home and pass an official certificate, using Claude + the right apps.**
 
