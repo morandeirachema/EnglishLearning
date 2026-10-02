@@ -206,6 +206,17 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 
 ---
 
+## 🔒 Privacy
+
+This repository is **public** on GitHub. Your essays, speaking transcripts and error log will be readable by anyone once pushed.
+- Don't write names, employers, addresses or health details in essays or transcripts; invent them for exam tasks.
+- To keep your progress private, make the repo private:
+  ```bash
+  gh repo edit morandeirachema/EnglishLearning --visibility private --accept-visibility-change-consequences
+  ```
+
+---
+
 ## 📁 Repo map
 
 | Path | What it is |

@@ -41,3 +41,4 @@ python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style
 - Never assess pronunciation from text or transcripts. Point to ELSA, Cambridge Speak & Improve, or a tutor.
 - Do not invent exam formats, dates, fees or rules. Link to the official site.
 - Every app or resource recommendation states platform and cost.
+- The GitHub repo is public. When writing to `log/`, `writing/` or `speaking/`, leave out personal details (real names, employer, address, health); replace them with placeholders.
