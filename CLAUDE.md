@@ -10,7 +10,7 @@ EnglishLearning is a personal study hub for an adult Spanish speaker learning En
 
 ```bash
 python3 scripts/stats.py [--days 30] [--since DATE]    # error trends + hours per strand; warns about malformed CSV rows
-python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style .m4a with macOS voices (A/B en_GB, C en_IE, D en_AU)
+python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style .m4a with macOS voices (A/B en_GB, C en_IE, D en_AU, N narrator; voices picked by locale)
 ```
 
 ## Learner profile

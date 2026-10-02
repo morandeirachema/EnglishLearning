@@ -9,6 +9,7 @@ Lines without a "X:" prefix are read by the narrator (speaker N).
 Usage:
     python3 scripts/listening.py listening/2026-10-02-interview.txt
     python3 scripts/listening.py FILE --twice --rate 160 --voices "A=Daniel,B=Moira"
+    Voices: A/B British, C Irish, D Australian, N narrator (British, distinct from A).
 
 Output: FILE with .m4a extension (copy it to the Pixel, or AirDrop/Drive).
 """
@@ -20,13 +21,38 @@ import tempfile
 import wave
 from pathlib import Path
 
+# Voices are chosen by base name + locale, because macOS shows voice names in the
+# system language (e.g. "Flo (Inglés (RU))" on a Spanish Mac, "Flo (English (UK))"
+# on an English one). Each speaker lists fallbacks in order of preference.
 DEFAULT_VOICES = {
-    "N": "Daniel",                 # en_GB narrator
-    "A": "Daniel",                 # en_GB
-    "B": "Flo (Inglés (RU))",      # en_GB
-    "C": "Moira",                  # en_IE
-    "D": "Karen",                  # en_AU
+    "N": ["Reed@en_GB", "Eddy@en_GB", "Daniel@en_GB"],    # narrator, distinct from A
+    "A": ["Daniel@en_GB"],
+    "B": ["Flo@en_GB", "Shelley@en_GB", "Sandy@en_GB"],
+    "C": ["Moira@en_IE"],
+    "D": ["Karen@en_AU"],
 }
+VOICE_LINE = re.compile(r"^(.*?)\s+([a-z]{2,3}_[A-Z0-9]{2,3})\s+#")
+
+
+def installed_voices():
+    out = subprocess.run(["say", "-v", "?"], capture_output=True, text=True, check=True).stdout
+    voices = []
+    for line in out.splitlines():
+        m = VOICE_LINE.match(line)
+        if m:
+            voices.append((m.group(1).strip(), m.group(2)))
+    return voices
+
+
+def resolve(spec, installed):
+    """'Flo@en_GB' -> the installed full name, or None. 'Daniel' matches any locale."""
+    base, _, locale = spec.partition("@")
+    for name, loc in installed:
+        if (name == base or name.startswith(base + " (")) and (not locale or loc == locale):
+            return name
+    return None
+
+
 RATE = 22050
 TURN = re.compile(r"^\s*([A-Z])\s*:\s*(.+)$")
 
@@ -58,10 +84,22 @@ def main():
     ap.add_argument("--voices", default="", help='override, e.g. "A=Daniel,B=Moira"')
     args = ap.parse_args()
 
-    voices = dict(DEFAULT_VOICES)
+    wanted = {k: list(v) for k, v in DEFAULT_VOICES.items()}
     for pair in filter(None, args.voices.split(",")):
+        if "=" not in pair:
+            sys.exit(f'Bad --voices entry "{pair}". Use SPEAKER=VOICE, e.g. "B=Moira" or "B=Flo@en_GB".')
         k, v = pair.split("=", 1)
-        voices[k.strip()] = v.strip()
+        wanted[k.strip().upper()] = [v.strip()]
+
+    installed = installed_voices()
+    voices = {}
+    for speaker, specs in wanted.items():
+        name = next((n for n in (resolve(sp, installed) for sp in specs) if n), None)
+        if not name:
+            sys.exit(f"No installed voice for speaker {speaker} (tried {', '.join(specs)}). "
+                     "Install one in System Settings > Accessibility > Spoken Content > System voice > Manage Voices, "
+                     "or pick another with --voices. List voices with: say -v '?'")
+        voices[speaker] = name
 
     turns = parse(args.script)
     if not turns:
@@ -72,7 +110,9 @@ def main():
         frames = []
         silence = b"\x00\x00" * int(RATE * args.pause)
         for i, (speaker, text) in enumerate(turns):
-            voice = voices.get(speaker, voices["A"])
+            if speaker not in voices:
+                sys.exit(f'Unknown speaker "{speaker}:" in script. Use A-D, or add it with --voices "{speaker}=VOICE".')
+            voice = voices[speaker]
             part = tmp / f"{i:04d}.wav"
             synth(text, voice, args.rate, part)
             with wave.open(str(part)) as w:
