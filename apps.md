@@ -20,6 +20,16 @@ For how these fit together with Claude, see [research/learning-with-claude-and-a
 - **Anki** (macOS, free) + **AnkiDroid** (Android, free), synced through a free AnkiWeb account. The core tool.
 - **Quizlet** (web, Android): free with ads, Plus ~US$36/yr. Easier, weaker retention.
 
+## Dictionaries and vocabulary level
+
+| Tool | Platform | Cost | Best use |
+|---|---|---|---|
+| Cambridge Dictionary | Web | Free | Learner definitions, UK/US audio, CEFR level shown on many entries |
+| Oxford Learner's Dictionaries | Web | Free | Definitions + the **Oxford 3000/5000** word lists tagged by CEFR level: a ready-made B2/C1 study list |
+| English Vocabulary Profile (Cambridge) | Web | Free **[U: may need registration]** | Shows which *meaning* of a word is B2 vs C1. Use it to aim your vocabulary at your exam level |
+| Ozdic | Web | Free | Collocations dictionary ("make a decision", "heavy rain"). Key for Use of English |
+| Text Inspector | Web | Freemium **[U]** | Paste an essay to see the CEFR level of the vocabulary you used |
+
 ## Input: listening and reading
 
 - **Language Reactor** (Chrome on the Mac): free, Pro ~US$40/yr. Dual subtitles on Netflix/YouTube. Desktop only.
@@ -65,4 +75,4 @@ For how these fit together with Claude, see [research/learning-with-claude-and-a
 
 ## Free core stack
 
-Anki + AnkiDroid, Write & Improve, Speak & Improve, Gemini Live (free year), Pixel Recorder, Language Reactor, YouGlish, LanguageTool free. Add Claude Pro and one weekly tutor lesson if the budget allows.
+Anki + AnkiDroid, Cambridge Dictionary + Ozdic, Write & Improve, Speak & Improve, Gemini Live (free year), Pixel Recorder, Language Reactor, YouGlish, LanguageTool free. Add Claude Pro and one weekly tutor lesson if the budget allows.

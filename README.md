@@ -150,6 +150,14 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 3. Play it on the Mac, or drop it in Google Drive and play it on the Pixel. Answer the questions **before** opening the key.
 4. Slow it down below B2 with `--rate 150`.
 
+### 📖 15. Dictionaries: aim at the right level &nbsp;🆓 · 🌐
+
+- **Cambridge Dictionary**: your default dictionary. Listen to the 🇬🇧 audio for every new word.
+- **Oxford Learner's Dictionaries**: download the **Oxford 3000/5000** lists; the B2 and C1 words are your vocabulary syllabus.
+- **Ozdic** (collocations): before using a word in an essay, check what goes with it (*make* a decision, *do* research). Fixes the *make/do* trap.
+- **English Vocabulary Profile**: check whether a word meaning is B2 or C1, so your essays show the level examiners want.
+- **Text Inspector**: paste a finished essay to see its vocabulary level.
+
 ---
 
 ## 🗓️ Weekly routine (~6.5 h)
