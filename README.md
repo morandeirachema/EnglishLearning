@@ -27,6 +27,20 @@ Every mistake you make ends up in [`log/errors.csv`](log/errors.csv). Your drill
 
 ---
 
+## 🚀 Start here: week 0
+
+| Day | Do this | Time |
+|---|---|---|
+| 1 | Free level tests: **EF SET** (efset.org) and Cambridge **Test your English**. Write the results down | 1 h |
+| 2 | Baseline: one **Speak & Improve** test and one essay in **Write & Improve** | 1 h |
+| 3 | Choose your exam and date in [exams.md](research/exams.md). In Claude Code run `/set-goal` with the exam, date and test results | 30 min |
+| 4 | Install: Claude app, Anki + AnkiDroid (+ AnkiWeb sync), ELSA, LanguageTool, Language Reactor. Activate the free **Google AI Pro** year on the Pixel | 45 min |
+| 5 | Create the Claude Project (section 1 below) and download your exam's scales ([assessment-scales.md](research/assessment-scales.md)) | 30 min |
+| 6 | Book trial lessons with 2–3 exam tutors on italki or Preply | 15 min |
+| 7 | First `/weekly-review`: it plans week 1 from your results | 15 min |
+
+---
+
 ## 🧰 The apps and how to use them
 
 Legend: 🆓 free · 💶 paid · 🖥️ Mac · 📱 Pixel · 🌐 web
@@ -204,11 +218,11 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 | `writing/` · `speaking/` | Your essays and speaking transcripts |
 | `listening/` | Listening scripts and generated audio |
 | `scripts/` | `listening.py` (audio from scripts) · `stats.py` (progress report) |
-| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` · `/listening-practice` · `/weekly-review` |
+| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` · `/listening-practice` · `/weekly-review` · `/set-goal` |
 
 <div align="center">
 
-**Next step:** choose your exam in [research/exams.md](research/exams.md) and write it in [CLAUDE.md](CLAUDE.md). 🚀
+**Next step:** do [week 0](#-start-here-week-0). 🚀
 
 <sub>App status and prices checked 2026-10-02. They change; check before paying.</sub>
 

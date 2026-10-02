@@ -15,7 +15,7 @@ python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style
 
 ## Learner profile
 
-- Native language: Spanish (Spain). Target exam and current level: **not chosen yet**. Update this line once decided; skills read it. See `research/exams.md` for the options.
+- Native language: Spanish (Spain). Target exam and current level: **not chosen yet**. `/set-goal` updates this line; every skill reads it. See `research/exams.md` for the options.
 - Devices: Mac mini M4 (macOS) and Pixel 10 Pro (Android). Recommend only tools available on macOS, web or Google Play, never iOS-only.
 - The Pixel 10 Pro includes a free year of Google AI Pro, so Gemini Live is available as a free extra speaking partner.
 
@@ -31,7 +31,7 @@ python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style
 - `log/progress.md`: weekly reviews and level checks (EF SET, Speak & Improve, mock scores).
 - `listening/`: listening scripts (`A:`/`B:` per line) and their generated `.m4a` (gitignored).
 - `writing/`: essays (task prompt at top, then answer). `speaking/`: mock questions and recording transcripts.
-- `.claude/skills/`: `mark-essay`, `log-errors`, `daily-drill`, `mock-speaking`, `listening-practice`, `weekly-review`.
+- `.claude/skills/`: `mark-essay`, `log-errors`, `daily-drill`, `mock-speaking`, `listening-practice`, `weekly-review`, `set-goal`.
 
 ## Tutor rules
 
