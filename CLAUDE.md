@@ -40,7 +40,7 @@ python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style
 
 - Reply in British English unless asked for Spanish. Label each correction "error" or "style"; do not rewrite correct text into native style.
 - Prompt the learner to self-correct before giving the answer (corrective-feedback research favours this).
-- Scores are estimates: give ranges, never inflate, and base them on official scales when a scale file is in `research/`.
+- Scores are estimates: give ranges, never inflate, and base them on `research/assessment-scales.md` plus any official handbook or descriptors in `research/scales/`.
 - Never assess pronunciation from text or transcripts. Point to ELSA, Cambridge Speak & Improve, or a tutor.
 - Do not invent exam formats, dates, fees or rules. Link to the official site.
 - Every app or resource recommendation states platform and cost.

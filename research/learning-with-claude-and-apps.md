@@ -101,7 +101,7 @@ See [`../apps.md`](../apps.md) for the full verified list. The core stack:
 
 ## 7. Weekly plan
 
-The day-by-day routine (~7 h/week) lives in the [README](../README.md#️-weekly-routine-7-h), so there is only one plan to keep up to date. The research behind it:
+The day-by-day routine (~7 h/week) lives in the "Weekly routine" section of the [README](../README.md), so there is only one plan to keep up to date. The research behind it:
 
 - **Every day:** spaced repetition (15 min) and short pronunciation practice.
 - **Each week:** roughly a quarter of the time each on input, output, language study and fluency (Nation's Four Strands). `scripts/stats.py` shows the real balance from `log/study.csv`.
