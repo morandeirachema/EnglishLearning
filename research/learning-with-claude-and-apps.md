@@ -29,7 +29,7 @@ Claude's role: **tutor, corrector, content generator and planner**. Not: officia
 | Duolingo-type apps alone | Weak for B2+. Positive studies mostly company-funded, receptive skills only | Fine as a habit, not as the plan |
 | Re-reading notes, highlighting | Low utility | Replace with quizzing yourself |
 
-**How long it takes.** Cambridge estimates ~200 guided hours per CEFR level (B1→B2, B2→C1). At ~6.5 h/week that is roughly 8–10 months per level in the best case; plan 9–15 months for B1→B2 and 12–18 for B2→C1.
+**How long it takes.** Cambridge estimates ~200 guided hours per CEFR level (B1→B2, B2→C1). At ~7 h/week, 200 h is about 7 months of perfect weeks, so 8–10 months per level once holidays and missed weeks are counted; plan 9–15 months for B1→B2 and 12–18 for B2→C1.
 
 Structure your week with Paul Nation's **Four Strands**: about a quarter each of input, output, language study, and fluency practice.
 
@@ -99,19 +99,16 @@ See [`../apps.md`](../apps.md) for the full verified list. The core stack:
 
 **Grammar and vocabulary:** missing subject ("Is important"); "the" with general nouns ("The life is hard"); present perfect with finished time ("I have seen it yesterday"); make/do; false friends (actually, eventually, assist, sensible, carpet, library, embarrassed); prepositions (depend on, married to); "people is"; "I have 30 years".
 
-## 7. Weekly plan (about 6.5 h)
+## 7. Weekly plan
 
-| Block | Time | Tool |
-|---|---|---|
-| Anki review | 15 min/day | Anki / AnkiDroid |
-| Input: reading + listening | 2 h | Podcasts, series, graded readers, Language Reactor |
-| Speaking with feedback | 1 h | Tutor or Claude voice mock + Recorder transcript |
-| Writing task + rewrite | 45 min | Claude marking + Write & Improve |
-| Shadowing / pronunciation | 30 min | Claude script + ELSA |
-| Mixed grammar / Use of English drill | 30 min | Claude drill from error log |
-| **Last 6–8 weeks** | Replace some input with 1 full timed paper per week | Official sample tests |
+The day-by-day routine (~7 h/week) lives in the [README](../README.md#️-weekly-routine-7-h), so there is only one plan to keep up to date. The research behind it:
 
-**Progress checks:** EF SET (free, 50 min) every 3 months; a 2-minute recorded monologue each month; error-log category counts going down.
+- **Every day:** spaced repetition (15 min) and short pronunciation practice.
+- **Each week:** roughly a quarter of the time each on input, output, language study and fluency (Nation's Four Strands). `scripts/stats.py` shows the real balance from `log/study.csv`.
+- **Every output session gets feedback**, and the errors go into `log/errors.csv`, which drives the drills.
+- **Last 6–8 weeks:** replace some input with one full timed paper per week.
+
+**Progress checks:** EF SET (free, 50 min) every 3 months; a 2-minute recorded monologue each month; error-log category counts going down (`/weekly-review`).
 
 ## 8. Next decision: which exam
 
