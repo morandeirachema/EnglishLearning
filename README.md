@@ -36,7 +36,7 @@ Legend: 🆓 free · 💶 paid · 🖥️ Mac · 📱 Pixel · 🌐 web
 **Setup (once)**
 1. Install the Claude app on the Pixel (Google Play) and the desktop app on the Mac.
 2. Create a Project called **English exam**. Paste prompt **T12** from [prompts.md](research/prompts.md) into its instructions.
-3. Upload the official writing and speaking assessment scales for your exam to the Project.
+3. Upload the official writing and speaking assessment scales for your exam to the Project. [assessment-scales.md](research/assessment-scales.md) lists the criteria and where to download them.
 4. In Settings, set the voice language to **English**.
 
 **Daily use**

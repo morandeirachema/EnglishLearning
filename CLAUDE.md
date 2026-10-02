@@ -24,6 +24,7 @@ python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style
 - `research/learning-with-claude-and-apps.md`: the main method (hybrid: spaced repetition + input + feedback + exam practice + error log), weekly plan, Claude limits.
 - `research/prompts.md`: prompt templates T1–T13 referenced by the skills.
 - `research/exams.md`: exam comparison for Spain.
+- `research/assessment-scales.md`: scoring criteria, grade boundaries and task facts per exam. Official handbooks/descriptors go in `research/scales/` (gitignored: copyrighted).
 - `apps.md`: verified app list with status and prices.
 - `log/errors.csv`: the learner's error log. Header: `date,original,correction,category,l1_interference,explanation,source`. Skills append to it; drills are generated from it.
 - `log/study.csv`: `date,minutes,strand,activity`; strand is input, output, study, fluency (Nation's Four Strands) or exam. Hours drive the ~200 h/CEFR-level estimate.
