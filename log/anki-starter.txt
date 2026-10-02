@@ -1,0 +1,20 @@
+#separator:Semicolon
+#html:true
+#notetype:Cloze
+#deck:English::Exam
+#tags column:3
+{{c1::It}} is important to practise every day.;English sentences need a subject. Spanish drops it ("Es importante").<br>Not: <i>Is important…</i>;starter error::grammar
+{{c1::Life}} is hard sometimes.;No <i>the</i> with general/abstract nouns.<br>Not: <i>The life is hard</i>;starter error::article
+I {{c1::saw}} that film yesterday.;Finished time (yesterday, last week) → past simple, not present perfect.<br>Not: <i>I have seen it yesterday</i>;starter error::tense
+I {{c1::am}} 30 years old.;Age uses <i>be</i>, not <i>have</i>.<br>Not: <i>I have 30 years</i>;starter error::grammar
+Most people {{c1::are}} friendly here.;<i>People</i> is plural.<br>Not: <i>people is</i>;starter error::grammar
+I need to {{c1::make}} a decision.;Collocation: make a decision / a mistake / a plan. Do homework / research / exercise.;starter error::collocation
+We have to {{c1::do}} some research first.;<i>do</i> + research, homework, exercise, your best.;starter error::collocation
+{{c1::Actually}}, I disagree with you.;actually = en realidad. "Actualmente" = currently / at the moment.;starter error::false-friend
+{{c1::Eventually}}, they found the solution.;eventually = finalmente. "Eventualmente" = possibly / occasionally.;starter error::false-friend
+I felt really {{c1::embarrassed}} when I forgot her name.;embarrassed = avergonzado. "Embarazada" = pregnant!;starter error::false-friend
+It {{c1::depends on}} the weather.;depend <b>on</b>, not "depend of".;starter error::preposition
+She is {{c1::married to}} a doctor.;married <b>to</b>, not "married with".;starter error::preposition
+I usually {{c1::go}} to the gym at 7.;Adverb of frequency goes before the main verb: I <b>usually go</b>.;starter error::word-order
+I'm interested {{c1::in}} learning more.;interested <b>in</b> + -ing.;starter error::preposition
+Thank you for {{c1::helping}} me.;Preposition + -ing form: for helping, before leaving.;starter error::grammar
