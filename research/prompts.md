@@ -14,7 +14,8 @@ Replace the parts in [brackets]. Turn **off** the "Learning" style for mocks and
 > My answer ([word count] words): [paste]
 
 ## T3 – Error log extraction
-> From this conversation or transcript, extract every language error I made. Output CSV with header: date,original,correction,category,l1_interference,explanation. category is one of: grammar, vocabulary, collocation, false-friend, preposition, article, tense, word-order, register, spelling. l1_interference is yes or no. explanation is 15 words or fewer. Then list my top 5 recurring patterns.
+> From this conversation or transcript, extract every language error I made. Output CSV with header: date,original,correction,category,l1_interference,explanation,source. Quote any field that contains a comma. category is one of: grammar, tense, article, preposition, word-order, vocabulary, collocation, false-friend, register, spelling, listening, reading, pronunciation. l1_interference is yes or no. explanation is 15 words or fewer. source is [voice / tutor / essay name]. Then list my top 5 recurring patterns.
+> (These columns match `log/errors.csv`, so the rows can be pasted straight in.)
 
 ## T4 – Anki cards (file import)
 > Create [20] Anki cloze cards at CEFR [B2/C1] on [topic] for [exam] writing and speaking. Output a plain-text file that starts with exactly these lines:

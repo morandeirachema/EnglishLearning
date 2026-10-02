@@ -26,7 +26,10 @@ python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style
 - `research/exams.md`: exam comparison for Spain.
 - `research/assessment-scales.md`: scoring criteria, grade boundaries and task facts per exam. Official handbooks/descriptors go in `research/scales/` (gitignored: copyrighted).
 - `apps.md`: verified app list with status and prices.
-- `log/errors.csv`: the learner's error log. Header: `date,original,correction,category,l1_interference,explanation,source`. Skills append to it; drills are generated from it.
+- `log/errors.csv`: the learner's error log. Skills append to it; drills and stats are generated from it.
+  - Columns: `date,original,correction,category,l1_interference,explanation,source`. Quote any field containing a comma; `scripts/stats.py` warns about rows with the wrong number of fields.
+  - `category` must be one of: grammar, tense, article, preposition, word-order, vocabulary, collocation, false-friend, register, spelling, listening, reading, pronunciation. `pronunciation` only comes from a tutor or ELSA, never from Claude's own judgement. `listening`/`reading` are comprehension mistakes.
+  - `l1_interference` is `yes` or `no`. `source` is the file or activity the error came from (e.g. `writing/2026-10-05-essay.md`, `tutor`, `voice`).
 - `log/study.csv`: `date,minutes,strand,activity`; strand is input, output, study, fluency (Nation's Four Strands) or exam. Hours drive the ~200 h/CEFR-level estimate.
 - `log/progress.md`: weekly reviews and level checks (EF SET, Speak & Improve, mock scores).
 - `listening/`: listening scripts (`A:`/`B:` per line) and their generated `.m4a` (gitignored).

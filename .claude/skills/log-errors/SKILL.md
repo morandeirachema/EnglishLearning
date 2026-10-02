@@ -5,6 +5,6 @@ description: Extract English errors from a pasted text or transcript (e.g. Pixel
 
 1. Treat the input as the learner's own English. If it is a speech transcript, ignore likely transcription glitches and do not comment on pronunciation.
 2. First list each error and ask the learner to try to self-correct, unless they asked for direct answers.
-3. Append rows to `log/errors.csv`: `date,original,correction,category,l1_interference,explanation,source`. Quote fields containing commas. Explanation is 15 words or fewer.
+3. Append rows to `log/errors.csv`: `date,original,correction,category,l1_interference,explanation,source`. Use only the categories listed in `CLAUDE.md`. Quote fields containing commas. Explanation is 15 words or fewer. Afterwards run `python3 scripts/stats.py` and fix any WARNING rows.
 4. Merge obvious duplicates by noting the repeat in the explanation rather than adding identical rows.
 5. Finish with the top 3 recurring categories in the whole log.

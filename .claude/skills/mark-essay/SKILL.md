@@ -9,5 +9,5 @@ description: Mark an English exam essay in writing/ against the learner's target
 3. Report per criterion: estimated score (as a range if unsure), the evidence from the text, and the descriptor wording that justifies it. Never score above the evidence.
 4. Error table: quote | correction | category | error or style. Correct only genuine errors; do not rewrite the essay.
 5. Give the 2 changes that would raise the score most.
-6. Append each genuine error to `log/errors.csv` with today's date and `source` = the essay file name. Use the categories from `research/prompts.md` T3.
+6. Append each genuine error to `log/errors.csv` with today's date and `source` = the essay file name. Use only the categories listed in `CLAUDE.md` and quote fields containing commas.
 7. Suggest the learner also submits it to Cambridge Write & Improve for a second opinion.
