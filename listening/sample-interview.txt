@@ -1,0 +1,7 @@
+# Sample B2 First Listening Part 4 style extract. Generate audio with:
+#   python3 scripts/listening.py listening/sample-interview.txt --twice
+You will hear an interview with a woman who started a community garden.
+A: So, Maria, what made you start the garden in the first place?
+B: Well, to be honest, it wasn't really planned. I'd moved into a flat with no outdoor space, and I suppose I missed having somewhere green.
+A: And how did your neighbours react?
+B: Some of them were a bit suspicious at first, actually. They thought it would attract noise. But once the first vegetables came up, most of them changed their minds.

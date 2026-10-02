@@ -142,6 +142,14 @@ Type a word or phrase you're not sure how to say → hear it in dozens of real Y
 
 In the **last 6–8 weeks**, do one **full timed paper per week**.
 
+### 🔈 14. Mac voices: exam-style listening audio &nbsp;🆓 · 🖥️
+
+Claude writes the listening script; your Mac turns it into audio with British, Irish and Australian voices, played twice like the real exam.
+1. In Claude Code run `/listening-practice` (or write your own script in `listening/`, one `A:` / `B:` turn per line).
+2. It runs `python3 scripts/listening.py listening/FILE.txt --twice` and creates an `.m4a`.
+3. Play it on the Mac, or drop it in Google Drive and play it on the Pixel. Answer the questions **before** opening the key.
+4. Slow it down below B2 with `--rate 150`.
+
 ---
 
 ## 🗓️ Weekly routine (~6.5 h)
@@ -149,7 +157,8 @@ In the **last 6–8 weeks**, do one **full timed paper per week**.
 | When | What | App | Time |
 |---|---|---|---|
 | Every day | Flashcard review | AnkiDroid 📱 | 15 min |
-| Mon · Wed | Listening + shadowing | Podcasts / Language Reactor | 30 min |
+| Mon | Listening + shadowing | Podcasts / Language Reactor | 30 min |
+| Wed | Exam-style listening task | `/listening-practice` | 30 min |
 | Tue | Speaking mock or tutor | Claude voice / italki | 45 min |
 | Thu | Essay + rewrite | Claude `/mark-essay` + Write & Improve | 45 min |
 | Fri | Mixed grammar drill | Claude `/daily-drill` | 20 min |
@@ -180,7 +189,9 @@ In the **last 6–8 weeks**, do one **full timed paper per week**.
 | [`log/errors.csv`](log/errors.csv) | Your error log (skills write here) |
 | [`log/progress.md`](log/progress.md) | Level checks over time |
 | `writing/` · `speaking/` | Your essays and speaking transcripts |
-| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` |
+| `listening/` | Listening scripts and generated audio |
+| `scripts/` | `listening.py` (audio from scripts) |
+| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` · `/listening-practice` |
 
 <div align="center">
 

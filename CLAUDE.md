@@ -4,7 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Purpose
 
-EnglishLearning is a personal study hub for an adult Spanish speaker learning English at home to pass an official English certificate. It is docs-first: Markdown research and plans, a CSV error log, and Claude Code skills that act as a tutor. There is no build, test or lint step.
+EnglishLearning is a personal study hub for an adult Spanish speaker learning English at home to pass an official English certificate. It is docs-first: Markdown research and plans, a CSV error log, and Claude Code skills that act as a tutor. There is no build or test step; helper scripts are Python 3 standard library only (no venv needed).
+
+## Commands
+
+```bash
+python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style .m4a with macOS voices (A/B en_GB, C en_IE, D en_AU)
+```
 
 ## Learner profile
 
@@ -20,8 +26,9 @@ EnglishLearning is a personal study hub for an adult Spanish speaker learning En
 - `apps.md`: verified app list with status and prices.
 - `log/errors.csv`: the learner's error log. Header: `date,original,correction,category,l1_interference,explanation,source`. Skills append to it; drills are generated from it.
 - `log/progress.md`: level checks over time (EF SET, mock scores).
+- `listening/`: listening scripts (`A:`/`B:` per line) and their generated `.m4a` (gitignored).
 - `writing/`: essays (task prompt at top, then answer). `speaking/`: mock questions and recording transcripts.
-- `.claude/skills/`: `mark-essay`, `log-errors`, `daily-drill`, `mock-speaking`.
+- `.claude/skills/`: `mark-essay`, `log-errors`, `daily-drill`, `mock-speaking`, `listening-practice`.
 
 ## Tutor rules
 
