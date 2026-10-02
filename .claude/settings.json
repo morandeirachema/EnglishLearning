@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/stats.py)",
+      "Bash(python3 scripts/stats.py:*)",
+      "Bash(python3 scripts/listening.py:*)"
+    ]
+  }
+}
