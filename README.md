@@ -174,7 +174,7 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 
 ---
 
-## 🗓️ Weekly routine (~6.5 h)
+## 🗓️ Weekly routine (~7 h)
 
 | When | What | App | Time |
 |---|---|---|---|

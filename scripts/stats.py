@@ -77,7 +77,7 @@ def study_report(rows):
     week_start = date.today() - timedelta(days=6)
     week = sum(int(r["minutes"]) for r in rows if (d := parse_date(r["date"])) and d >= week_start and r["minutes"].strip().isdigit())
     hours = total / 60
-    print(f"  Total {hours:.1f} h | last 7 days {week / 60:.1f} h (target ~6.5 h)")
+    print(f"  Total {hours:.1f} h | last 7 days {week / 60:.1f} h (target ~6.5–7 h)")
     print(f"  Progress toward next CEFR level (~{HOURS_PER_LEVEL} h): {hours * 100 / HOURS_PER_LEVEL:.0f}%\n")
 
 
