@@ -180,15 +180,15 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 |---|---|---|---|
 | Every day | Flashcard review | AnkiDroid 📱 | 15 min |
 | Mon | Listening + shadowing | Podcasts / Language Reactor | 30 min |
-| Wed | Exam-style listening task | `/listening-practice` | 30 min |
 | Tue | Speaking mock or tutor | Claude voice / italki | 45 min |
+| Wed | Exam-style listening or reading task (alternate weeks) | `/listening-practice` · `/reading-practice` | 30 min |
 | Thu | Essay + rewrite | Claude `/mark-essay` + Write & Improve | 45 min |
 | Fri | Mixed grammar drill | Claude `/daily-drill` | 20 min |
 | Sat | Series / reading for fun | Language Reactor, Kindle | 1 h |
 | Sun | Record 2 min → log errors | Pixel Recorder + `/log-errors` | 15 min |
 | Daily, short | Pronunciation | ELSA | 10 min |
 
-📊 **Track it:** after each session add one line to [`log/study.csv`](log/study.csv) (`2026-10-05,30,input,podcast`). Strands: `input`, `output`, `study`, `fluency`, `exam`.
+📊 **Track it:** the Claude Code skills log their own minutes to [`log/study.csv`](log/study.csv). For everything else (podcasts, Anki, tutor, series), tell Claude Code what you did, e.g. `/log-study 30 min podcast, 15 min Anki`. Strands: `input`, `output`, `study`, `fluency`, `exam`.
 
 🔄 **Every Sunday:** run `/weekly-review` in Claude Code. It runs `python3 scripts/stats.py`, shows your hours, strand balance and which error types are going down, then plans next week.
 
@@ -210,10 +210,6 @@ Claude writes the listening script; your Mac turns it into audio with British, I
 
 This repository is **public** on GitHub. Your essays, speaking transcripts and error log will be readable by anyone once pushed.
 - Don't write names, employers, addresses or health details in essays or transcripts; invent them for exam tasks.
-- To keep your progress private, make the repo private:
-  ```bash
-  gh repo edit morandeirachema/EnglishLearning --visibility private --accept-visibility-change-consequences
-  ```
 
 ---
 
@@ -228,8 +224,9 @@ This repository is **public** on GitHub. Your essays, speaking transcripts and e
 | [`log/progress.md`](log/progress.md) | Weekly reviews and level checks |
 | `writing/` · `speaking/` | Your essays and speaking transcripts |
 | `listening/` | Listening scripts and generated audio |
+| `reading/` | Reading and Use of English tasks |
 | `scripts/` | `listening.py` (audio from scripts) · `stats.py` (progress report) |
-| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` · `/listening-practice` · `/weekly-review` · `/set-goal` |
+| `.claude/skills/` | `/mark-essay` · `/log-errors` · `/daily-drill` · `/mock-speaking` · `/listening-practice` · `/reading-practice` · `/log-study` · `/weekly-review` · `/set-goal` |
 
 <div align="center">
 

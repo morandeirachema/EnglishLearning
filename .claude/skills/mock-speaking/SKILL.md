@@ -7,3 +7,4 @@ description: Prepare a speaking mock test, or assess a speaking transcript saved
 2. For an assessment: read the transcript in `speaking/`. Score with the target exam's speaking criteria from `research/assessment-scales.md` (skipping Pronunciation), giving ranges only. State plainly that pronunciation cannot be judged from a transcript, and point to ELSA, Speak & Improve, or a tutor.
 3. Log errors to `log/errors.csv` using the categories in `CLAUDE.md` (source = transcript file name). Never use `pronunciation` here.
 4. Write an improved version at the target level that keeps the learner's ideas, for shadowing.
+5. After an assessment, append one row to `log/study.csv` (`date,minutes,strand,activity`): strand `exam` for a full timed mock, otherwise `output`; activity `speaking <part or topic>`. Ask the learner how long they spoke if they did not say.

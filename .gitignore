@@ -8,3 +8,6 @@ listening/*.m4a
 # Official scales and handbooks (copyrighted; keep local only)
 research/scales/*
 !research/scales/.gitkeep
+
+# Python bytecode
+__pycache__/

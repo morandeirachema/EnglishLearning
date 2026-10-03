@@ -16,3 +16,4 @@ description: Generate a 10-minute interleaved English drill from the learner's m
    #tags column:3
    ```
    Then one card per line: `Text;Back Extra;Tags`. Text is a full sentence with the target as `{{c1::word}}`. Back Extra has the definition, two collocations and a Spanish gloss, separated by `<br>`. Tags are space-separated (e.g. `B2 error::article`). Quote any field containing a semicolon. Base cards on the learner's own errors.
+6. Append one row to `log/study.csv` (`date,minutes,strand,activity`): strand `study`, activity `daily drill`. Use the real session length if known, otherwise 10.

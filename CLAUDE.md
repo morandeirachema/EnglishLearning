@@ -33,8 +33,9 @@ python3 scripts/listening.py listening/FILE.txt --twice   # script -> exam-style
 - `log/study.csv`: `date,minutes,strand,activity`; strand is input, output, study, fluency (Nation's Four Strands) or exam. Hours drive the ~200 h/CEFR-level estimate.
 - `log/progress.md`: weekly reviews and level checks (EF SET, Speak & Improve, mock scores).
 - `listening/`: listening scripts (`A:`/`B:` per line) and their generated `.m4a` (gitignored).
+- `reading/`: reading and Use of English tasks (text, questions, key at the end).
 - `writing/`: essays (task prompt at top, then answer). `speaking/`: mock questions and recording transcripts.
-- `.claude/skills/`: `mark-essay`, `log-errors`, `daily-drill`, `mock-speaking`, `listening-practice`, `weekly-review`, `set-goal`.
+- `.claude/skills/`: `mark-essay`, `log-errors`, `daily-drill`, `mock-speaking`, `listening-practice`, `reading-practice`, `log-study`, `weekly-review`, `set-goal`. Practice skills append their own minutes to `log/study.csv`.
 
 ## Tutor rules
 

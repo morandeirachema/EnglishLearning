@@ -11,3 +11,4 @@ description: Mark an English exam essay in writing/ against the learner's target
 5. Give the 2 changes that would raise the score most.
 6. Append each genuine error to `log/errors.csv` with today's date and `source` = the essay file name. Use only the categories listed in `CLAUDE.md` and quote fields containing commas.
 7. Suggest the learner also submits it to Cambridge Write & Improve for a second opinion.
+8. Append one row to `log/study.csv` (`date,minutes,strand,activity`): strand `exam` if written timed without help, otherwise `output`; activity `essay <task type>`. Ask the learner how long writing it took if they did not say; do not count marking time.
