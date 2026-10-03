@@ -8,6 +8,9 @@ Replace the parts in [brackets]. Turn **off** the "Learning" style for mocks and
 ## T1 – Mock speaking test (voice mode on the Pixel)
 > Act as a certified [IELTS / Cambridge C1 Advanced] Speaking examiner. Run a full Part [1/2/3] test following the official format and timings. Ask one question at a time, stay in role, and give no feedback or help during the test. When I say "END TEST", give me: an estimated band per criterion (excluding pronunciation), 3 strengths, the 5 most costly errors quoted from my transcript with corrections, and 5 higher-level phrases I could have used.
 
+**Paired variant (Cambridge Parts 3–4):** add to the end of T1:
+> In the collaborative task, also play the other candidate: a peer at my level who sometimes disagrees, interrupts politely or goes quiet, so I have to invite their opinion and negotiate a decision. Never correct me during the test.
+
 ## T2 – Essay marking against descriptors
 > Mark this [IELTS Task 2 / B2 First essay / C1 Advanced report] strictly against the attached official assessment scales. For each criterion: score, the descriptor line that justifies it (quoted), and evidence from my text. Then list errors in a table (quote | correction | type: grammar/lexis/cohesion/register | error or style). Correct only genuine errors. Do not rewrite my essay. Finally, name the top 2 changes that would raise my score by one band.
 > Task: [paste]

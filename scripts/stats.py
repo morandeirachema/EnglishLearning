@@ -5,6 +5,8 @@ Usage:
     python3 scripts/stats.py                     # full report
     python3 scripts/stats.py --days 30           # error window for "recent" (default 30)
     python3 scripts/stats.py --since 2026-10-05  # count level progress from this date (last level check)
+
+Errors with the same correction on two or more dates are listed as REPEATED.
 """
 import argparse
 import csv
@@ -81,12 +83,36 @@ def error_report(rows, days):
     print(f"  Spanish-interference errors: {l1}/{len(rows)}")
     top = [c for c, _ in (recent or allc).most_common(3)]
     print(f"  Focus next drills on: {', '.join(top)}\n")
+    repeat_report(rows)
+
+
+def norm(s):
+    return " ".join("".join(ch for ch in s.lower() if ch.isalnum() or ch.isspace()).split())
+
+
+def repeat_report(rows, limit=10):
+    """Errors corrected on one day and made again on a later day: the best drill targets."""
+    days = {}
+    for r in rows:
+        key = norm(r["correction"])
+        if key and (d := parse_date(r["date"])):
+            days.setdefault(key, []).append((d, r))
+    repeats = [(sorted(v, key=lambda x: x[0]), k) for k, v in days.items() if len({d for d, _ in v}) > 1]
+    if not repeats:
+        return
+    repeats.sort(key=lambda x: (len({d for d, _ in x[0]}), x[0][-1][0]), reverse=True)
+    print(f"REPEATED  (made again after being corrected: {len(repeats)})")
+    for hits, _ in repeats[:limit]:
+        last = hits[-1][1]
+        n = len({d for d, _ in hits})
+        print(f"  {n}x  {last['original']!r} -> {last['correction']!r}  [{last['category']}, last {hits[-1][0]}]")
+    print()
 
 
 def study_report(rows, since):
     print(f"STUDY TIME  ({len(rows)} sessions)")
     if not rows:
-        print("  none yet. Add rows to log/study.csv: date,minutes,strand,activity\n")
+        print("  none yet. Use /log-study, or add rows to log/study.csv: date,minutes,strand,activity\n")
         return
     mins = Counter()
     bad = 0
